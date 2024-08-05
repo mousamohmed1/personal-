@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Enter Name</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" id="nameInput" placeholder="Enter your name" />
+                    </td>
+                    <td id="linkCell">
+                        <button onclick="generateLink()">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="info-box">
+            <p>If you were invited by a friend, click here</p>
+            <button id="startButton" onclick="startAnimation()">Start</button>
+        </div>
+    </div>
+    <div id="resultBox" class="result-box">
+        <p id="resultText">I Love You</p>
+        <button id="nextButton" onclick="showName()">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
